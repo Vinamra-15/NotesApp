@@ -57,7 +57,7 @@ let search = document.getElementById("searchTxt");
 search.addEventListener("input",function(){
     
     let inputTxt = search.value.toLowerCase();
-    console.log('Input event fired!', inputTxt);
+    //console.log('Input event fired!', inputTxt);
     let savedNotes = document.getElementsByClassName('savedNotes');
     Array.from(savedNotes).forEach(function(element){
         let notesTxt = element.getElementsByTagName("textarea")[0].innerText;
